@@ -1,0 +1,79 @@
+### Create Dictionary Index with Mapping
+POST http://localhost:9200/dictionary/_mapping
+Content-Type: application/json
+
+{
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "word": {
+        "type": "object",
+        "dynamic": true,
+        "properties": {
+          "ru": {
+            "type": "text",
+            "analyzer": "synonym_analyzer",
+            "search_analyzer": "synonym_analyzer"
+          },
+          "en": {
+            "type": "text",
+            "analyzer": "synonym_analyzer",
+            "search_analyzer": "synonym_analyzer"
+          },
+          "tt": {
+            "type": "text",
+            "analyzer": "synonym_analyzer",
+            "search_analyzer": "synonym_analyzer"
+          }
+        }
+      },
+      "transcription": {
+        "type": "object",
+        "dynamic": true,
+        "properties": {
+          "ru": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "en": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "tt": {
+            "type": "text",
+            "analyzer": "standard"
+          }
+        }
+      },
+      "description": {
+        "type": "object",
+        "dynamic": true,
+        "properties": {
+          "ru": {
+            "type": "text",
+            "analyzer": "synonym_analyzer",
+            "search_analyzer": "synonym_analyzer"
+          },
+          "en": {
+            "type": "text",
+            "analyzer": "synonym_analyzer",
+            "search_analyzer": "synonym_analyzer"
+          },
+          "tt": {
+            "type": "text",
+            "analyzer": "synonym_analyzer",
+            "search_analyzer": "synonym_analyzer"
+          }
+        }
+      },
+      "created_at": {
+        "type": "date"
+      },
+      "updated_at": {
+        "type": "date"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+/postgres
+/elasticsearch
+.idea
+**/target
+.DS_Store
+backend/dependencies/lingua.jar

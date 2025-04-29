@@ -1,0 +1,9 @@
+### Удаление записей из индекса
+POST http://localhost:9200/dictionary/_delete_by_query
+Content-Type: application/json
+
+{
+  "query": {
+    "match_all": {}
+  }
+}

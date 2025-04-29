@@ -1,0 +1,1475 @@
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "1",
+  "word": {
+    "ru": "собака",
+    "en": "dog",
+    "tat": "эт"
+  },
+  "transcription": {
+    "ru": "собака",
+    "en": "dɔɡ",
+    "tat": "эт"
+  },
+  "description": {
+    "ru": "Домашнее животное, известное своей преданностью.",
+    "en": "A domestic animal known for its loyalty.",
+    "tat": "Өй хайваны, үзенең сабырлыгы һәм дуслыгы белән танылган."
+  },
+  "created_at": "2025-04-29T12:34:56.000Z",
+  "updated_at": "2025-04-29T12:34:57.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "2",
+  "word": {
+    "ru": "кошка",
+    "en": "cat",
+    "tat": "песәк"
+  },
+  "transcription": {
+    "ru": "кошка",
+    "en": "kæt",
+    "tat": "песәк"
+  },
+  "description": {
+    "ru": "Домашнее животное, известное своей независимостью.",
+    "en": "A domestic animal known for its independence.",
+    "tat": "Үз алдына баручы өй хайваны."
+  },
+  "created_at": "2025-04-29T12:35:00.000Z",
+  "updated_at": "2025-04-29T12:35:01.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "3",
+  "word": {
+    "ru": "птица",
+    "en": "bird",
+    "tat": "кош"
+  },
+  "transcription": {
+    "ru": "птица",
+    "en": "bɜːrd",
+    "tat": "кош"
+  },
+  "description": {
+    "ru": "Животное, способное летать.",
+    "en": "An animal capable of flying.",
+    "tat": "Очырга сәләтле хайван."
+  },
+  "created_at": "2025-04-29T12:35:05.000Z",
+  "updated_at": "2025-04-29T12:35:06.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "4",
+  "word": {
+    "ru": "рыба",
+    "en": "fish",
+    "tat": "балык"
+  },
+  "transcription": {
+    "ru": "рыба",
+    "en": "fɪʃ",
+    "tat": "балык"
+  },
+  "description": {
+    "ru": "Живое существо, обитающее в воде.",
+    "en": "A living creature that lives in water.",
+    "tat": "Судыңда яши торган тереклек."
+  },
+  "created_at": "2025-04-29T12:35:10.000Z",
+  "updated_at": "2025-04-29T12:35:11.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "5",
+  "word": {
+    "ru": "дерево",
+    "en": "tree",
+    "tat": "агач"
+  },
+  "transcription": {
+    "ru": "дерево",
+    "en": "triː",
+    "tat": "агач"
+  },
+  "description": {
+    "ru": "Растение с твердым стволом.",
+    "en": "A plant with a hard trunk.",
+    "tat": "Каты кәүсәле үлән."
+  },
+  "created_at": "2025-04-29T12:35:15.000Z",
+  "updated_at": "2025-04-29T12:35:16.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "6",
+  "word": {
+    "ru": "река",
+    "en": "river",
+    "tat": "елга"
+  },
+  "transcription": {
+    "ru": "река",
+    "en": "ˈrɪvər",
+    "tat": "елга"
+  },
+  "description": {
+    "ru": "Естественный водный поток.",
+    "en": "A natural water current.",
+    "tat": "Табигый су агымы."
+  },
+  "created_at": "2025-04-29T12:35:20.000Z",
+  "updated_at": "2025-04-29T12:35:21.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "7",
+  "word": {
+    "ru": "гора",
+    "en": "mountain",
+    "tat": "тау"
+  },
+  "transcription": {
+    "ru": "гора",
+    "en": "ˈmaʊntn",
+    "tat": "тау"
+  },
+  "description": {
+    "ru": "Большое возвышение земной поверхности.",
+    "en": "A large elevation of the earth's surface.",
+    "tat": "Ер өсенең зур бүлкен."
+  },
+  "created_at": "2025-04-29T12:35:25.000Z",
+  "updated_at": "2025-04-29T12:35:26.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "8",
+  "word": {
+    "ru": "озеро",
+    "en": "lake",
+    "tat": "күл"
+  },
+  "transcription": {
+    "ru": "озеро",
+    "en": "leɪk",
+    "tat": "күл"
+  },
+  "description": {
+    "ru": "Естественный водоем.",
+    "en": "A natural body of water.",
+    "tat": "Табигый су бердәмлеге."
+  },
+  "created_at": "2025-04-29T12:35:30.000Z",
+  "updated_at": "2025-04-29T12:35:31.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "9",
+  "word": {
+    "ru": "лес",
+    "en": "forest",
+    "tat": "урман"
+  },
+  "transcription": {
+    "ru": "лес",
+    "en": "ˈfɔːrɪst",
+    "tat": "урман"
+  },
+  "description": {
+    "ru": "Большое количество деревьев.",
+    "en": "A large number of trees.",
+    "tat": "Зур күплек агачлар."
+  },
+  "created_at": "2025-04-29T12:35:35.000Z",
+  "updated_at": "2025-04-29T12:35:36.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "10",
+  "word": {
+    "ru": "дом",
+    "en": "house",
+    "tat": "Өй"
+  },
+  "transcription": {
+    "ru": "дом",
+    "en": "haʊs",
+    "tat": "Өй"
+  },
+  "description": {
+    "ru": "Строение для проживания.",
+    "en": "A structure for living.",
+    "tat": "Тула торган корылма."
+  },
+  "created_at": "2025-04-29T12:35:40.000Z",
+  "updated_at": "2025-04-29T12:35:41.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "11",
+  "word": {
+    "ru": "машина",
+    "en": "car",
+    "tat": "машина"
+  },
+  "transcription": {
+    "ru": "машина",
+    "en": "kɑːr",
+    "tat": "машина"
+  },
+  "description": {
+    "ru": "Транспортное средство.",
+    "en": "A vehicle.",
+    "tat": "Күчерү өчен транспорт."
+  },
+  "created_at": "2025-04-29T12:35:45.000Z",
+  "updated_at": "2025-04-29T12:35:46.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "12",
+  "word": {
+    "ru": "книга",
+    "en": "book",
+    "tat": "китап"
+  },
+  "transcription": {
+    "ru": "книга",
+    "en": "bʊk",
+    "tat": "китап"
+  },
+  "description": {
+    "ru": "Издание в виде переплетенных листов.",
+    "en": "A publication in the form of bound sheets.",
+    "tat": "Бәйләнгән битләрдән торган басма."
+  },
+  "created_at": "2025-04-29T12:35:50.000Z",
+  "updated_at": "2025-04-29T12:35:51.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "13",
+  "word": {
+    "ru": "цветок",
+    "en": "flower",
+    "tat": "чәчәк"
+  },
+  "transcription": {
+    "ru": "цветок",
+    "en": "ˈflaʊər",
+    "tat": "чәчәк"
+  },
+  "description": {
+    "ru": "Орган растения для размножения.",
+    "en": "The reproductive organ of a plant.",
+    "tat": "Үләннең үрчү органы."
+  },
+  "created_at": "2025-04-29T12:35:55.000Z",
+  "updated_at": "2025-04-29T12:35:56.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "14",
+  "word": {
+    "ru": "друг",
+    "en": "friend",
+    "tat": "дус"
+  },
+  "transcription": {
+    "ru": "друг",
+    "en": "frend",
+    "tat": "дус"
+  },
+  "description": {
+    "ru": "Человек, с которым поддерживаются дружеские отношения.",
+    "en": "A person with whom one has a friendship.",
+    "tat": "Дуслык мөнәсәбәтендә булган кеше."
+  },
+  "created_at": "2025-04-29T12:36:00.000Z",
+  "updated_at": "2025-04-29T12:36:01.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "15",
+  "word": {
+    "ru": "город",
+    "en": "city",
+    "tat": "шәһәр"
+  },
+  "transcription": {
+    "ru": "город",
+    "en": "ˈsɪti",
+    "tat": "шәһәр"
+  },
+  "description": {
+    "ru": "Большое поселение с развитой инфраструктурой.",
+    "en": "A large settlement with developed infrastructure.",
+    "tat": "Зур жирлектә, үсешле провайдлар белән тәэмин ителгән."
+  },
+  "created_at": "2025-04-29T12:36:05.000Z",
+  "updated_at": "2025-04-29T12:36:06.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "16",
+  "word": {
+    "ru": "солнце",
+    "en": "sun",
+    "tat": "кояш"
+  },
+  "transcription": {
+    "ru": "солнце",
+    "en": "sʌn",
+    "tat": "кояш"
+  },
+  "description": {
+    "ru": "Звезда в центре Солнечной системы.",
+    "en": "The star at the center of the solar system.",
+    "tat": "Кояш системасының үзәк йолдызы."
+  },
+  "created_at": "2025-04-29T12:36:10.000Z",
+  "updated_at": "2025-04-29T12:36:11.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "17",
+  "word": {
+    "ru": "класс",
+    "en": "class",
+    "tat": "класс"
+  },
+  "transcription": {
+    "ru": "класс",
+    "en": "klɑːs",
+    "tat": "класс"
+  },
+  "description": {
+    "ru": "Шаблон для создания объектов, описывающий их свойства и поведение.",
+    "en": "A blueprint for creating objects, describing their properties and behavior.",
+    "tat": "Объектлар ясау өчен шаблон, аларның үзлекләрен һәм холыкны тасвирлый."
+  },
+  "created_at": "2025-04-29T12:40:00.000Z",
+  "updated_at": "2025-04-29T12:40:01.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "18",
+  "word": {
+    "ru": "объект",
+    "en": "object",
+    "tat": "объект"
+  },
+  "transcription": {
+    "ru": "объект",
+    "en": "ˈɒbdʒɪkt",
+    "tat": "объект"
+  },
+  "description": {
+    "ru": "Экземпляр класса, обладающий состоянием и поведением.",
+    "en": "An instance of a class, possessing state and behavior.",
+    "tat": "Классның мисалы, халәт һәм холыкка ия."
+  },
+  "created_at": "2025-04-29T12:40:05.000Z",
+  "updated_at": "2025-04-29T12:40:06.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "19",
+  "word": {
+    "ru": "наследование",
+    "en": "inheritance",
+    "tat": "варислык"
+  },
+  "transcription": {
+    "ru": "наследование",
+    "en": "ˌɪn.həˈrɪtəns",
+    "tat": "варислык"
+  },
+  "description": {
+    "ru": "Механизм, позволяющий одному классу наследовать свойства и методы другого класса.",
+    "en": "A mechanism that allows one class to inherit properties and methods from another class.",
+    "tat": "Бер классның икенче классның үзлекләрен һәм методларын варис итеп алу механизмы."
+  },
+  "created_at": "2025-04-29T12:40:10.000Z",
+  "updated_at": "2025-04-29T12:40:11.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "20",
+  "word": {
+    "ru": "полиморфизм",
+    "en": "polymorphism",
+    "tat": "күптөрлелек"
+  },
+  "transcription": {
+    "ru": "полиморфизм",
+    "en": "ˌpɒlɪˈmɔːfɪzəm",
+    "tat": "күптөрлелек"
+  },
+  "description": {
+    "ru": "Способность объектов с одинаковой спецификацией иметь различную реализацию.",
+    "en": "The ability of objects with the same specification to have different implementations.",
+    "tat": "Бер үк спецификацияга ия булган объектларның төрле реализацияләргә ия булу сәләте."
+  },
+  "created_at": "2025-04-29T12:40:15.000Z",
+  "updated_at": "2025-04-29T12:40:16.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "21",
+  "word": {
+    "ru": "инкапсуляция",
+    "en": "encapsulation",
+    "tat": "капсуляция"
+  },
+  "transcription": {
+    "ru": "инкапсуляция",
+    "en": "ɪnˌkæpsjuˈleɪʃn",
+    "tat": "капсуляция"
+  },
+  "description": {
+    "ru": "Сокрытие внутреннего состояния объекта и обеспечение доступа к нему через методы.",
+    "en": "The hiding of the internal state of an object and providing access to it through methods.",
+    "tat": "Объектның эчке халәтен яшерү һәм аны методлар аша файдаланырга ирек бирү."
+  },
+  "created_at": "2025-04-29T12:40:20.000Z",
+  "updated_at": "2025-04-29T12:40:21.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "22",
+  "word": {
+    "ru": "абстракция",
+    "en": "abstraction",
+    "tat": "абстракция"
+  },
+  "transcription": {
+    "ru": "абстракция",
+    "en": "æbˈstrækʃn",
+    "tat": "абстракция"
+  },
+  "description": {
+    "ru": "Процесс выделения существенных характеристик объекта и игнорирования несущественных.",
+    "en": "The process of extracting the essential characteristics of an object and ignoring the non-essential ones.",
+    "tat": "Объектның мөһим үзлекләрен аерып алу һәм әһәмиятсезләрен сиздермичә калдыру процессы."
+  },
+  "created_at": "2025-04-29T12:40:25.000Z",
+  "updated_at": "2025-04-29T12:40:26.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "23",
+  "word": {
+    "ru": "интерфейс",
+    "en": "interface",
+    "tat": "интерфейс"
+  },
+  "transcription": {
+    "ru": "интерфейс",
+    "en": "ˈɪntərˌfeɪs",
+    "tat": "интерфейс"
+  },
+  "description": {
+    "ru": "Набор методов и свойств, которые класс обязуется реализовать.",
+    "en": "A set of methods and properties that a class commits to implement.",
+    "tat": "Классның үтәргә вәгъдә иткән методлар һәм үзлекләр жимере."
+  },
+  "created_at": "2025-04-29T12:40:30.000Z",
+  "updated_at": "2025-04-29T12:40:31.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "24",
+  "word": {
+    "ru": "модульность",
+    "en": "modularity",
+    "tat": "модульлек"
+  },
+  "transcription": {
+    "ru": "модульность",
+    "en": "ˌmɒdjʊˈlærəti",
+    "tat": "модульлек"
+  },
+  "description": {
+    "ru": "Принцип разделения программы на независимые модули.",
+    "en": "The principle of dividing a program into independent modules.",
+    "tat": "Программаны мөстәкыйль модульләргә бүлү принцибы."
+  },
+  "created_at": "2025-04-29T12:40:35.000Z",
+  "updated_at": "2025-04-29T12:40:36.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "25",
+  "word": {
+    "ru": "абстрактный класс",
+    "en": "abstract class",
+    "tat": "абстракт класс"
+  },
+  "transcription": {
+    "ru": "абстрактный класс",
+    "en": "ˈæbstrækt ˈklɑːs",
+    "tat": "абстракт класс"
+  },
+  "description": {
+    "ru": "Класс, который не может быть инстанцирован и служит для определения общих характеристик для других классов.",
+    "en": "A class that cannot be instantiated and serves to define common characteristics for other classes.",
+    "tat": "Инстанцияләнә алмаган һәм башка класслар өчен гомуми үзлекләр билгеләү өчен хезмәт итә."
+  },
+  "created_at": "2025-04-29T12:40:40.000Z",
+  "updated_at": "2025-04-29T12:40:41.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "26",
+  "word": {
+    "ru": "конструктор",
+    "en": "constructor",
+    "tat": "конструктор"
+  },
+  "transcription": {
+    "ru": "конструктор",
+    "en": "kənˈstrʌktər",
+    "tat": "конструктор"
+  },
+  "description": {
+    "ru": "Специальный метод, используемый для инициализации объектов.",
+    "en": "A special method used to initialize objects.",
+    "tat": "Объектларны инициализацияләү өчен файдаланылган махсус метод."
+  },
+  "created_at": "2025-04-29T12:40:45.000Z",
+  "updated_at": "2025-04-29T12:40:46.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "27",
+  "word": {
+    "ru": "деструктор",
+    "en": "destructor",
+    "tat": "деструктор"
+  },
+  "transcription": {
+    "ru": "деструктор",
+    "en": "dɪˈstrʌktər",
+    "tat": "деструктор"
+  },
+  "description": {
+    "ru": "Специальный метод, используемый для деинициализации объектов.",
+    "en": "A special method used to deinitialize objects.",
+    "tat": "Объектларны деинициализацияләү өчен файдаланылган махсус метод."
+  },
+  "created_at": "2025-04-29T12:40:50.000Z",
+  "updated_at": "2025-04-29T12:40:51.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "28",
+  "word": {
+    "ru": "множественное наследование",
+    "en": "multiple inheritance",
+    "tat": "күптөрле варислык"
+  },
+  "transcription": {
+    "ru": "множественное наследование",
+    "en": "ˌmʌltɪpəl ɪnˈhɛrɪtəns",
+    "tat": "күптөрле варислык"
+  },
+  "description": {
+    "ru": "Механизм, позволяющий классу наследовать свойства и методы от нескольких классов.",
+    "en": "A mechanism that allows a class to inherit properties and methods from multiple classes.",
+    "tat": "Классның күптөрле класслардан үзлекләр һәм методларны варис итеп алу механизмы."
+  },
+  "created_at": "2025-04-29T12:40:55.000Z",
+  "updated_at": "2025-04-29T12:40:56.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "29",
+  "word": {
+    "ru": "абстрактный метод",
+    "en": "abstract method",
+    "tat": "абстракт метод"
+  },
+  "transcription": {
+    "ru": "абстрактный метод",
+    "en": "ˈæbstrækt ˈmɛθəd",
+    "tat": "абстракт метод"
+  },
+  "description": "Метод, который не имеет реализации и должен быть переопределен в подклассах.",
+  "description": {
+    "ru": "Метод, который не имеет реализации и должен быть переопределен в подклассах.",
+    "en": "A method that has no implementation and must be overridden in subclasses.",
+    "tat": "Реализациясы булмаган һәм аерым классларда үзгәртелә торган метод."
+  },
+  "created_at": "2025-04-29T12:41:00.000Z",
+  "updated_at": "2025-04-29T12:41:01.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "30",
+  "word": {
+    "ru": "полиморфный метод",
+    "en": "polymorphic method",
+    "tat": "күптөрле метод"
+  },
+  "transcription": {
+    "ru": "полиморфный метод",
+    "en": "pəˌlɪmɔːrfɪk ˈmɛθəd",
+    "tat": "күптөрле метод"
+  },
+  "description": {
+    "ru": "Метод, который может иметь различные реализации в разных классах.",
+    "en": "A method that can have different implementations in different classes.",
+    "tat": "Төрле классларда төрле реализацияләргә ия булган метод."
+  },
+  "created_at": "2025-04-29T12:41:05.000Z",
+  "updated_at": "2025-04-29T12:41:06.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "31",
+  "word": {
+    "ru": "интерфейс",
+    "en": "interface",
+    "tat": "интерфейс"
+  },
+  "transcription": {
+    "ru": "интерфейс",
+    "en": "ˈɪntərˌfeɪs",
+    "tat": "интерфейс"
+  },
+  "description": {
+    "ru": "Набор методов и свойств, которые класс обязуется реализовать.",
+    "en": "A set of methods and properties that a class commits to implement.",
+    "tat": "Классның үтәргә вәгъдә иткән методлар һәм үзлекләр жимере."
+  },
+  "created_at": "2025-04-29T12:41:10.000Z",
+  "updated_at": "2025-04-29T12:41:11.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "32",
+  "word": {
+    "ru": "композиция",
+    "en": "composition",
+    "tat": "композиция"
+  },
+  "transcription": {
+    "ru": "композиция",
+    "en": "ˌkɒmpəˈzɪʃn",
+    "tat": "композиция"
+  },
+  "description": {
+    "ru": "Принцип, при котором один объект содержит другой объект.",
+    "en": "The principle by which one object contains another object.",
+    "tat": "Бер объектның икенче объектны үз эчендә саклаган принцибы."
+  },
+  "created_at": "2025-04-29T12:41:15.000Z",
+  "updated_at": "2025-04-29T12:41:16.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "33",
+  "word": {
+    "ru": "агрегация",
+    "en": "aggregation",
+    "tat": "агрегация"
+  },
+  "transcription": {
+    "ru": "агрегация",
+    "en": "ˌæɡrɪˈɡeɪʃn",
+    "tat": "агрегация"
+  },
+  "description": {
+    "ru": "Принцип, при котором один объект содержит ссылку на другой объект.",
+    "en": "The principle by which one object contains a reference to another object.",
+    "tat": "Бер объектның икенче объектка карата ссылка саклау принцибы."
+  },
+  "created_at": "2025-04-29T12:41:20.000Z",
+  "updated_at": "2025-04-29T12:41:21.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "34",
+  "word": {
+    "ru": "класс",
+    "en": "class",
+    "tat": "класс"
+  },
+  "transcription": {
+    "ru": "класс",
+    "en": "klɑːs",
+    "tat": "класс"
+  },
+  "description": {
+    "ru": "Шаблон для создания объектов, описывающий их свойства и поведение.",
+    "en": "A blueprint for creating objects, describing their properties and behavior.",
+    "tat": "Объектлар ясау өчен шаблон, аларның үзлекләрен һәм холыкны тасвирлый."
+  },
+  "created_at": "2025-04-29T12:41:25.000Z",
+  "updated_at": "2025-04-29T12:41:26.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "35",
+  "word": {
+    "ru": "объект",
+    "en": "object",
+    "tat": "объект"
+  },
+  "transcription": {
+    "ru": "объект",
+    "en": "ˈɒbdʒɪkt",
+    "tat": "объект"
+  },
+  "description": {
+    "ru": "Экземпляр класса, обладающий состоянием и поведением.",
+    "en": "An instance of a class, possessing state and behavior.",
+    "tat": "Классның мисалы, халәт һәм холыкка ия."
+  },
+  "created_at": "2025-04-29T12:41:30.000Z",
+  "updated_at": "2025-04-29T12:41:31.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "36",
+  "word": {
+    "ru": "наследование",
+    "en": "inheritance",
+    "tat": "варислык"
+  },
+  "transcription": {
+    "ru": "наследование",
+    "en": "ˌɪn.həˈrɪtəns",
+    "tat": "варислык"
+  },
+  "description": {
+    "ru": "Механизм, позволяющий одному класссу наследовать свойства и методы другого класса.",
+    "en": "A mechanism that allows one class to inherit properties and methods from another class.",
+    "tat": "Бер классның икенче классның үзлекләрен һәм методларын варис итеп алу механизмы."
+  },
+  "created_at": "2025-04-29T12:41:35.000Z",
+  "updated_at": "2025-04-29:41:36.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "37",
+  "word": {
+    "ru": "полиморфизм",
+    "en": "polymorphism",
+    "tat": "күптөрлелек"
+  },
+  "transcription": {
+    "ru": "полиморфизм",
+    "en": "ˌpɒlɪˈmɔːfɪzəm",
+    "tat": "күптөрлелек"
+  },
+  "description": {
+    "ru": "Способность объектов с одинаковой спецификацией иметь различную реализацию.",
+    "en": "The ability of objects with the same specification to have different implementations.",
+    "tat": "Бер үк спецификацияга ия булган объектларның төрле реализацияләргә ия булу сәләте."
+  },
+  "created_at": "2025-04-29T12:41:40.000Z",
+  "updated_at": "2025-04-29T12:41:41.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "38",
+  "word": {
+    "ru": "инкапсуляция",
+    "en": "encapsulation",
+    "tat": "капсуляция"
+  },
+  "transcription": {
+    "ru": "инкапсуляция",
+    "en": "ɪnˌkæpsjuˈleɪʃn",
+    "tat": "капсуляция"
+  },
+  "description": {
+    "ru": "Сокрытие внутреннего состояния объекта и обеспечение доступа к нему через методы.",
+    "en": "The hiding of the internal state of an object and providing access to it through methods.",
+    "tat": "Объектның эчке халәтен яшерү һәм аны методлар аша файдаланырга ирек бирү."
+  },
+  "created_at": "2025-04-29T12:41:45.000Z",
+  "updated_at": "2025-04-29T12:41:46.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "39",
+  "word": {
+    "ru": "абстракция",
+    "en": "abstraction",
+    "tat": "абстракция"
+  },
+  "transcription": {
+    "ru": "абстракция",
+    "en": "æbˈstrækʃn",
+    "tat": "абстракция"
+  },
+  "description": {
+    "ru": "Процесс выделения существенных характеристик объекта и игнорирования несущественных.",
+    "en": "The process of extracting the essential characteristics of an object and ignoring the non-essential ones.",
+    "tat": "Объектның мөһим үзлекләрен аерып алу һәм әһәмиятсезләрен сиздермичә калдыру процессы."
+  },
+  "created_at": "2025-04-29T12:41:50.000Z",
+  "updated_at": "2025-04-29T12:41:51.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "40",
+  "word": {
+    "ru": "интерфейс",
+    "en": "interface",
+    "tat": "интерфейс"
+  },
+  "transcription": {
+    "ru": "интерфейс",
+    "en": "ˈɪntərˌfeɪs",
+    "tat": "интерфейс"
+  },
+  "description": {
+    "ru": "Набор методов и свойств, которые класс обязуется реализовать.",
+    "en": "A set of methods and properties that a class commits to implement.",
+    "tat": "Классның үтәргә вәгъдә иткән методлар һәм үзлекләр жимере."
+  },
+  "created_at": "2025-04-29T12:41:55.000Z",
+  "updated_at": "2025-04-29T12:41:56.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "41",
+  "word": {
+    "ru": "модульность",
+    "en": "modularity",
+    "tat": "модульлек"
+  },
+  "transcription": {
+    "ru": "модульность",
+    "en": "ˌmɒdjʊˈlærəti",
+    "tat": "модульлек"
+  },
+  "description": {
+    "ru": "Принцип разделения программы на независимые модули.",
+    "en": "The principle of dividing a program into independent modules.",
+    "tat": "Программаны мөстәкыйль модульләргә бүлү принцибы."
+  },
+  "created_at": "2025-04-29T12:42:00.000Z",
+  "updated_at": "2025-04-29T12:42:01.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "42",
+  "word": {
+    "ru": "абстрактный класс",
+    "en": "abstract class",
+    "tat": "абстракт класс"
+  },
+  "transcription": {
+    "ru": "абстрактный класс",
+    "en": "ˈæbstrækt ˈklɑːs",
+    "tat": "абстракт класс"
+  },
+  "description": {
+    "ru": "Класс, который не может быть инстанцирован и служит для определения общих характеристик для других классов.",
+    "en": "A class that cannot be instantiated and serves to define common characteristics for other classes.",
+    "tat": "Инстанцияләнә алмаган һәм башка класслар өчен гомуми үзлекләр билгеләү өчен хезмәт итә."
+  },
+  "created_at": "2025-04-29T12:42:05.000Z",
+  "updated_at": "2025-04-29T12:42:06.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "43",
+  "word": {
+    "ru": "конструктор",
+    "en": "constructor",
+    "tat": "конструктор"
+  },
+  "transcription": {
+    "ru": "конструктор",
+    "en": "kənˈstrʌktər",
+    "tat": "конструктор"
+  },
+  "description": {
+    "ru": "Специальный метод, используемый для инициализации объектов.",
+    "en": "A special method used to initialize objects.",
+    "tat": "Объектларны инициализацияләү өчен файдаланылган махсус метод."
+  },
+  "created_at": "2025-04-29T12:42:10.000Z",
+  "updated_at": "2025-04-29T12:42:11.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "44",
+  "word": {
+    "ru": "деструктор",
+    "en": "destructor",
+    "tat": "деструктор"
+  },
+  "transcription": {
+    "ru": "деструктор",
+    "en": "dɪˈstrʌktər",
+    "tat": "деструктор"
+  },
+  "description": {
+    "ru": "Специальный метод, используемый для деинициализации объектов.",
+    "en": "A special method used to deinitialize objects.",
+    "tat": "Объектларны деинициализацияләү өчен файдаланылган махсус метод."
+  },
+  "created_at": "2025-04-29T12:42:15.000Z",
+  "updated_at": "2025-04-29T12:42:16.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "45",
+  "word": {
+    "ru": "множественное наследование",
+    "en": "multiple inheritance",
+    "tat": "күптөрле варислык"
+  },
+  "transcription": {
+    "ru": "множественное наследование",
+    "en": "ˌmʌltɪpəl ɪnˈhɛrɪtəns",
+    "tat": "күптөрле варислык"
+  },
+  "description": {
+    "ru": "Механизм, позволяющий класссу наследовать свойства и методы от нескольких классов.",
+    "en": "A mechanism that allows a class to inherit properties and methods from multiple classes.",
+    "tat": "Классның күптөрле класслардан үзлекләр һәм методларны варис итеп алу механизмы."
+  },
+  "created_at": "2025-04-29T12:42:20.000Z",
+  "updated_at": "2025-04-29T12:42:21.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "46",
+  "word": {
+    "ru": "абстрактный метод",
+    "en": "abstract method",
+    "tat": "абстракт метод"
+  },
+  "transcription": {
+    "ru": "абстрактный метод",
+    "en": "ˈæbstrækt ˈmɛθəd",
+    "tat": "абстракт метод"
+  },
+  "description": {
+    "ru": "Метод, который не имеет реализации и должен быть переопределен в подклассах.",
+    "en": "A method that has no implementation and must be overridden in subclasses.",
+    "tat": "Реализациясы булмаган һәм аерым классларда үзгәртелә торган метод."
+  },
+  "created_at": "2025-04-29T12:42:25.000Z",
+  "updated_at": "2025-04-29T12:42:26.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "47",
+  "word": {
+    "ru": "полиморфный метод",
+    "en": "polymorphic method",
+    "tat": "күптөрле метод"
+  },
+  "transcription": {
+    "ru": "полиморфный метод",
+    "en": "pəˌlɪmɔːrfɪk ˈmɛθəd",
+    "tat": "күптөрле метод"
+  },
+  "description": {
+    "ru": "Метод, который может иметь различные реализации в разных классах.",
+    "en": "A method that can have different implementations in different classes.",
+    "tat": "Төрле классларда төрле реализацияләргә ия булган метод."
+  },
+  "created_at": "2025-04-29T12:42:30.000Z",
+  "updated_at": "2025-04-29T12:42:31.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "48",
+  "word": {
+    "ru": "интерфейс",
+    "en": "interface",
+    "tat": "интерфейс"
+  },
+  "transcription": {
+    "ru": "интерфейс",
+    "en": "ˈɪntərˌfeɪs",
+    "tat": "интерфейс"
+  },
+  "description": {
+    "ru": "Набор методов и свойств, которые класс обязуется реализовать.",
+    "en": "A set of methods and properties that a class commits to implement.",
+    "tat": "Классның үтәргә вәгъдә иткән методлар һәм үзлекләр жимере."
+  },
+  "created_at": "2025-04-29T12:42:35.000Z",
+  "updated_at": "2025-04-29T12:42:36.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "49",
+  "word": {
+    "ru": "композиция",
+    "en": "composition",
+    "tat": "композиция"
+  },
+  "transcription": {
+    "ru": "композиция",
+    "en": "ˌkɒmpəˈzɪʃn",
+    "tat": "композиция"
+  },
+  "description": {
+    "ru": "Принцип, при котором один объект содержит другой объект.",
+    "en": "The principle by which one object contains another object.",
+    "tat": "Бер объектның икенче объектны үз эчендә саклаган принцибы."
+  },
+  "created_at": "2025-04-29T12:42:40.000Z",
+  "updated_at": "2025-04-29T12:42:41.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "50",
+  "word": {
+    "ru": "агрегация",
+    "en": "aggregation",
+    "tat": "агрегация"
+  },
+  "transcription": {
+    "ru": "агрегация",
+    "en": "ˌæɡrɪˈɡeɪʃn",
+    "tat": "агрегация"
+  },
+  "description": {
+    "ru": "Принцип, при котором один объект содержит ссылку на другой объект.",
+    "en": "The principle by which one object contains a reference to another object.",
+    "tat": "Бер объектның икенче объектка карата ссылка саклау принцибы."
+  },
+  "created_at": "2025-04-29T12:42:45.000Z",
+  "updated_at": "2025-04-29T12:42:46.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "51",
+  "word": {
+    "ru": "класс",
+    "en": "class",
+    "tat": "класс"
+  },
+  "transcription": {
+    "ru": "класс",
+    "en": "klɑːs",
+    "tat": "класс"
+  },
+  "description": {
+    "ru": "Шаблон для создания объектов, описывающий их свойства и поведение.",
+    "en": "A blueprint for creating objects, describing their properties and behavior.",
+    "tat": "Объектлар ясау өчен шаблон, аларның үзлекләрен һәм холыкны тасвирлый."
+  },
+  "created_at": "2025-04-29T12:42:50.000Z",
+  "updated_at": "2025-04-29T12:42:51.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "52",
+  "word": {
+    "ru": "объект",
+    "en": "object",
+    "tat": "объект"
+  },
+  "transcription": {
+    "ru": "объект",
+    "en": "ˈɒbdʒɪkt",
+    "tat": "объект"
+  },
+  "description": {
+    "ru": "Экземпляр класса, обладающий состоянием и поведением.",
+    "en": "An instance of a class, possessing state and behavior.",
+    "tat": "Классның мисалы, халәт һәм холыкка ия."
+  },
+  "created_at": "2025-04-29T12:42:55.000Z",
+  "updated_at": "2025-04-29T12:42:56.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "53",
+  "word": {
+    "ru": "наследование",
+    "en": "inheritance",
+    "tat": "варислык"
+  },
+  "transcription": {
+    "ru": "наследование",
+    "en": "ˌɪn.həˈrɪtəns",
+    "tat": "варислык"
+  },
+  "description": {
+    "ru": "Механизм, позволяющий одному класссу наследовать свойства и методы другого класса.",
+    "en": "A mechanism that allows one class to inherit properties and methods from another class.",
+    "tat": "Бер классның икенче классның үзлекләрен һәм методларын варис итеп алу механизмы."
+  },
+  "created_at": "2025-04-29T12:43:00.000Z",
+  "updated_at": "2025-04-29T12:43:01.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "54",
+  "word": {
+    "ru": "полиморфизм",
+    "en": "polymorphism",
+    "tat": "күптөрлелек"
+  },
+  "transcription": {
+    "ru": "полиморфизм",
+    "en": "ˌpɒlɪˈmɔːfɪzəm",
+    "tat": "күптөрлелек"
+  },
+  "description": {
+    "ru": "Способность объектов с одинаковой спецификации иметь различную реализацию.",
+    "en": "The ability of objects with the same specification to have different implementations.",
+    "tat": "Бер үк спецификацияга ия булган объектларның төрле реализацияләргә ия булу сәләте."
+  },
+  "created_at": "2025-04-29T12:43:05.000Z",
+  "updated_at": "2025-04-29T12:43:06.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "55",
+  "word": {
+    "ru": "инкапсуляция",
+    "en": "encapsulation",
+    "tat": "капсуляция"
+  },
+  "transcription": {
+    "ru": "инкапсуляция",
+    "en": "ɪnˌkæpsjuˈleɪʃn",
+    "tat": "капсуляция"
+  },
+  "description": {
+    "ru": "Сокрытие внутреннего состояния объекта и обеспечение доступа к нему через методы.",
+    "en": "The hiding of the internal state of an object and providing access to it through methods.",
+    "tat": "Объектның эчке халәтен яшерү һәм аны методлар аша файдаланырга ирек бирү."
+  },
+  "created_at": "2025-04-29T12:43:10.000Z",
+  "updated_at": "2025-04-29T12:43:11.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "56",
+  "word": {
+    "ru": "абстракция",
+    "en": "abstraction",
+    "tat": "абстракция"
+  },
+  "transcription": {
+    "ru": "абстракция",
+    "en": "æbˈstrækʃn",
+    "tat": "абстракция"
+  },
+  "description": {
+    "ru": "Процесс выделения существенных характеристик объекта и игнорирования несущественных.",
+    "en": "The process of extracting the essential characteristics of an object and ignoring the non-essential ones.",
+    "tat": "Объектның мөһим үзлекләрен аерып алу һәм әһәмиятсезләрен сиздермичә калдыру процессы."
+  },
+  "created_at": "2025-04-29T12:43:15.000Z",
+  "updated_at": "2025-04-29T12:43:16.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "57",
+  "word": {
+    "ru": "интерфейс",
+    "en": "interface",
+    "tat": "интерфейс"
+  },
+  "transcription": {
+    "ru": "интерфейс",
+    "en": "ˈɪntərˌfeɪs",
+    "tat": "интерфейс"
+  },
+  "description": {
+    "ru": "Набор методов и свойств, которые класс обязуется реализовать.",
+    "en": "A set of methods and properties that a class commits to implement.",
+    "tat": "Классның үтәргә вәгъдә иткән методлар һәм үзлекләр жимере."
+  },
+  "created_at": "2025-04-29T12:43:20.000Z",
+  "updated_at": "2025-04-29T12:43:21.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "58",
+  "word": {
+    "ru": "модульность",
+    "en": "modularity",
+    "tat": "модульлек"
+  },
+  "transcription": {
+    "ru": "модульность",
+    "en": "ˌmɒdjʊˈlærəti",
+    "tat": "модульлек"
+  },
+  "description": {
+    "ru": "Принцип разделения программы на независимые модули.",
+    "en": "The principle of dividing a program into independent modules.",
+    "tat": "Программаны мөстәкыйль модульләргә бүлү принцибы."
+  },
+  "created_at": "2025-04-29T12:43:25.000Z",
+  "updated_at": "2025-04-29T12:43:26.000Z"
+}
+
+### Вставка данных в индекс
+POST http://localhost:9200/dictionary/_doc
+Content-Type: application/json
+
+{
+  "id": "59",
+  "word": {
+    "ru": "ООП",
+    "en": "OOP",
+    "tat": "ООП"
+  },
+  "transcription": {
+    "ru": "ооп",
+    "en": "oʊˈoʊˈpiː",
+    "tat": "ооп"
+  },
+  "description": {
+    "ru": "Парадигма программирования, основанная на концепции объектов, которые могут содержать данные и код. В ООП программы организованы вокруг объектов и классов, что позволяет использовать такие принципы, как инкапсуляция, наследование и полиморфизм.",
+    "en": "A programming paradigm based on the concept of objects, which can contain data and code. In OOP, programs are organized around objects and classes, enabling the use of principles such as encapsulation, inheritance, and polymorphism.",
+    "tat": "Программаларның төзелеше, объектларга нигезләнгән, аларда мәгълүматлар һәм код булырга мөмкин. ООП-та программалар объектлар һәм класслар тирәсендә оештырыла, бу инкапсуляция, варислык һәм күптөрлелек принципларын куллануга мөмкинлек бирә."
+  },
+  "created_at": "2025-04-29T12:45:00.000Z",
+  "updated_at": "2025-04-29T12:45:01.000Z"
+}

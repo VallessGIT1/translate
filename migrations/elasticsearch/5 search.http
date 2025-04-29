@@ -1,0 +1,11 @@
+### Проверка поиска
+GET http://localhost:9200/dictionary/_search
+Content-Type: application/json
+
+{
+  "query": {
+    "match": {
+      "word.ru": "пёс"
+    }
+  }
+}

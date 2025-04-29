@@ -1,13 +1,11 @@
 package me.valless.dictionary.mapper;
 
-import java.time.LocalDateTime;
 import me.valless.dictionary.api.model.dictionary.AddWordRequest;
 import me.valless.dictionary.api.model.dictionary.EditWordRequest;
 import me.valless.dictionary.api.model.dictionary.RemoveWordRequest;
 import me.valless.dictionary.api.model.dictionary.WordResponse;
 import me.valless.dictionary.document.DictionaryEntry;
 import me.valless.dictionary.model.TranslationResult;
-import me.valless.dictionary.utils.TimeUtils;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -42,12 +40,9 @@ public class TranslationMapper {
                 .word(dictionaryEntry.getWord())
                 .transcription(dictionaryEntry.getTranscription())
                 .description(dictionaryEntry.getDescription())
-                .createdAt(LocalDateTime.parse(dictionaryEntry.getCreatedAt(),
-                        TimeUtils.TIME_FORMATTER))
-                .updatedAt(LocalDateTime.parse(dictionaryEntry.getUpdatedAt(),
-                        TimeUtils.TIME_FORMATTER))
+                .createdAt(dictionaryEntry.getCreatedAt())
+                .updatedAt(dictionaryEntry.getUpdatedAt())
                 .build();
-
     }
 
     public TranslationResult map(String sourceLanguageCode, String targetLanguageCode,

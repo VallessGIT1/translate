@@ -1,7 +1,9 @@
 package me.valless.dictionary.document;
 
 import static me.valless.dictionary.config.Constants.ELASTICSEARCH_INDEX;
+import static org.springframework.data.elasticsearch.annotations.FieldType.Date;
 
+import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,6 +11,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.Map;
 import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
 
 @Data
 @Builder
@@ -21,8 +24,10 @@ public class DictionaryEntry {
     private Map<String, String> word;
     private Map<String, String> transcription;
     private Map<String, String> description;
-    private String createdAt;
-    private String updatedAt;
+    @Field(name = "created_at", type = Date)
+    private Date createdAt;
+    @Field(name = "updated_at", type = Date)
+    private Date updatedAt;
 
     public String getWordByLanguage(String languageCode) {
         return word.get(languageCode);

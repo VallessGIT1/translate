@@ -1,0 +1,30 @@
+dog, pooch, canine, hound, pup, mutt, man’s best friend, doggo, tail-wagger
+cat, kitty, feline, pussycat, tabby, mouser, furball, housecat, meower
+bird, avian, feathered, winged, songbird, flyer, flapper, sky-dweller, winged creature
+fish, aquatic, water creature, swimmer, gilled animal, sea dweller, finned being, marine life
+tree, oak, pine, birch, plant, maple, spruce, cedar, foliage, trunked flora
+river, stream, brook, watercourse, creek, flow, channel, riverbed, freshwater path
+mountain, hill, peak, elevation, summit, ridge, height, highland, mount, upland
+lake, pond, reservoir, body of water, lagoon, basin, inland sea, stillwater, water expanse
+forest, woodland, jungle, timberland, grove, thicket, woods, rainforest, copse, greenbelt
+house, building, structure, edifice, dwelling, residence, home, abode, shelter, habitation
+car, automobile, vehicle, transport, auto, ride, motorcar, machine, wheeled transport, sedan
+book, publication, volume, edition, tome, work, manuscript, title, literary piece, printed material
+flower, rose, tulip, bloom, blossom, bud, plant, floral, flora, petal-bearing plant
+friend, buddy, companion, comrade, pal, mate, confidant, partner, ally, bestie
+city, metropolis, capital, urban area, municipality, conurbation, town, megalopolis, cityscape
+sun, star, luminary, solar body, sunlight, solar disk, daystar, celestial body, radiant sphere
+class, category, type, classification, group, division, tier, level, bracket, kind
+object, instance, entity, specimen, element, item, sample, occurrence, individual, component
+inheritance, hierarchy, derivation, lineage, extension, subclassing, ancestry, class tree, class structure
+polymorphism, versatility, variability, adaptability, flexibility, dynamic behavior, method overriding, many forms, behavioral variation
+encapsulation, concealment, packaging, containment, data hiding, isolation, boundary enforcement, access control
+abstraction, generalization, idealization, extraction, simplification, conceptualization, detachment, high-level view
+interface, protocol, contract, connection, API, communication layer, interaction point, agreement, specification
+modularity, structuring, organization, division, separation of concerns, independence, componentization, system partitioning
+abstract class, base class, generic class, template, superclass, conceptual class, parent class, foundational class
+constructor, initializer, creator, builder, instantiator, setup method, class initiator, initializer function
+destructor, deinitializer, destroyer, cleaner, finalizer, cleanup method, object terminator, memory releaser
+multiple inheritance, multiple levels of inheritance, hierarchical inheritance, complex inheritance, multi-source inheritance, extended class structure
+polymorphic method, virtual method, dynamic method, overridden method, runtime method, flexible function, abstracted method
+OOP, Object-oriented programming, OOP paradigm, object-based design, object-oriented model, class-based architecture, object-first approach

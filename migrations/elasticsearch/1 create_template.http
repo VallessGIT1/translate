@@ -1,0 +1,162 @@
+### Создание шаблона индекса
+PUT http://localhost:9200/_index_template/dictionary_template
+Content-Type: application/json
+
+{
+  "index_patterns": ["dictionary*"],
+  "template": {
+    "settings": {
+      "analysis": {
+        "filter": {
+          "synonym_filter_ru": {
+            "type": "synonym",
+            "synonyms_path": "synonyms/ru.txt",
+            "ignore_case": true
+          },
+          "synonym_filter_en": {
+            "type": "synonym",
+            "synonyms_path": "synonyms/en.txt",
+            "ignore_case": true
+          },
+          "synonym_filter_tat": {
+            "type": "synonym",
+            "synonyms_path": "synonyms/tat.txt",
+            "ignore_case": true
+          },
+          "russian_stemmer": {
+            "type": "stemmer",
+            "language": "russian"
+          },
+          "english_stemmer": {
+            "type": "stemmer",
+            "language": "english"
+          },
+          "tatar_stemmer": {
+            "type": "stemmer",
+            "language": "turkish"
+          }
+        },
+        "analyzer": {
+          "synonym_analyzer_ru": {
+            "tokenizer": "standard",
+            "filter": [
+              "lowercase",
+              "russian_stemmer",
+              "synonym_filter_ru"
+            ]
+          },
+          "synonym_analyzer_en": {
+            "tokenizer": "standard",
+            "filter": [
+              "lowercase",
+              "english_stemmer",
+              "synonym_filter_en"
+            ]
+          },
+          "synonym_analyzer_tat": {
+            "tokenizer": "standard",
+            "filter": [
+              "lowercase",
+              "tatar_stemmer",
+              "synonym_filter_tat"
+            ]
+          },
+          "standard_analyzer_ru": {
+            "tokenizer": "standard",
+            "filter": [
+              "lowercase",
+              "russian_stemmer"
+            ]
+          },
+          "standard_analyzer_en": {
+            "tokenizer": "standard",
+            "filter": [
+              "lowercase",
+              "english_stemmer"
+            ]
+          },
+          "standard_analyzer_tat": {
+            "tokenizer": "standard",
+            "filter": [
+              "lowercase",
+              "tatar_stemmer"
+            ]
+          }
+        }
+      }
+    },
+    "mappings": {
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "word": {
+          "type": "object",
+          "dynamic": true,
+          "properties": {
+            "ru": {
+              "type": "text",
+              "analyzer": "synonym_analyzer_ru",
+              "search_analyzer": "synonym_analyzer_ru"
+            },
+            "en": {
+              "type": "text",
+              "analyzer": "synonym_analyzer_en",
+              "search_analyzer": "synonym_analyzer_en"
+            },
+            "tat": {
+              "type": "text",
+              "analyzer": "synonym_analyzer_tat",
+              "search_analyzer": "synonym_analyzer_tat"
+            }
+          }
+        },
+        "transcription": {
+          "type": "object",
+          "dynamic": true,
+          "properties": {
+            "ru": {
+              "type": "text",
+              "analyzer": "standard_analyzer_ru"
+            },
+            "en": {
+              "type": "text",
+              "analyzer": "standard_analyzer_en"
+            },
+            "tat": {
+              "type": "text",
+              "analyzer": "standard_analyzer_tat"
+            }
+          }
+        },
+        "description": {
+          "type": "object",
+          "dynamic": true,
+          "properties": {
+            "ru": {
+              "type": "text",
+              "analyzer": "synonym_analyzer_ru",
+              "search_analyzer": "synonym_analyzer_ru"
+            },
+            "en": {
+              "type": "text",
+              "analyzer": "synonym_analyzer_en",
+              "search_analyzer": "synonym_analyzer_en"
+            },
+            "tat": {
+              "type": "text",
+              "analyzer": "synonym_analyzer_tat",
+              "search_analyzer": "synonym_analyzer_tat"
+            }
+          }
+        },
+        "created_at": {
+          "type": "date"
+        },
+        "updated_at": {
+          "type": "date"
+        }
+      }
+    }
+  }
+}

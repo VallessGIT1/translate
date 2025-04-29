@@ -1,5 +1,5 @@
 /postgres
-/elasticsearch
+/elasticsearch/data
 .idea
 **/target
 .DS_Store

@@ -1,0 +1,2 @@
+### Создание индекса
+PUT http://localhost:9200/dictionary

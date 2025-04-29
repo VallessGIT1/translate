@@ -1,0 +1,8 @@
+### Проверка работы анализатора
+POST http://localhost:9200/dictionary/_analyze
+Content-Type: application/json
+
+{
+  "analyzer": "synonym_analyzer_ru",
+  "text": "собака"
+}

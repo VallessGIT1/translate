@@ -8,7 +8,3 @@ spring:
     password: ${DATABASE_PASSWORD}
   elasticsearch:
     host: ${ELASTICSEARCH_HOST}
-logging:
-  level:
-    org.springframework.data.elasticsearch: DEBUG
-    org.elasticsearch.client: DEBUG

@@ -1,5 +1,6 @@
 package me.valless.dictionary.api;
 
+import lombok.extern.slf4j.Slf4j;
 import me.valless.dictionary.api.model.error.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import org.springframework.web.server.ResponseStatusException;
 
+@Slf4j
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
@@ -33,6 +35,7 @@ public class GlobalExceptionHandler {
         var response = ErrorResponse.builder()
                 .message("Внутренняя ошибка сервера: " + exception.getClass().getSimpleName() + " -> " + exception.getMessage())
                 .build();
+        log.error("Внутренняя ошибка сервера", exception);
         return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }

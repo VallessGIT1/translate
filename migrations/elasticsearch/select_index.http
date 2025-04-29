@@ -1,0 +1,10 @@
+### Чтение записей из индекса
+POST http://localhost:9200/dictionary/_search?scroll=1m
+Content-Type: application/json
+
+{
+  "size": 1000,
+  "query": {
+    "match_all": {}
+  }
+}

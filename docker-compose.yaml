@@ -22,7 +22,8 @@ services:
     ports:
       - "9200:9200"
     volumes:
-      - ./elasticsearch:/usr/share/elasticsearch/data
+      - ./elasticsearch/data:/usr/share/elasticsearch/data
+      - ./elasticsearch/config/synonyms:/usr/share/elasticsearch/config/synonyms
 
   backend:
     build:
@@ -41,18 +42,18 @@ services:
       - postgres
       - elasticsearch
 
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    container_name: dictionary-frontend
-    ports:
-      - "80:3000"
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
-    depends_on:
-      - backend
+#  frontend:
+#    build:
+#      context: ./frontend
+#      dockerfile: Dockerfile
+#    container_name: dictionary-frontend
+#    ports:
+#      - "80:3000"
+#    volumes:
+#      - ./frontend:/app
+#      - /app/node_modules
+#    depends_on:
+#      - backend
 
 volumes:
   postgres:

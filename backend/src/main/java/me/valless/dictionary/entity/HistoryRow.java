@@ -1,32 +1,34 @@
 package me.valless.dictionary.entity;
 
-import static jakarta.persistence.EnumType.STRING;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import me.valless.dictionary.model.Role;
 
 @Data
 @Entity
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "users")
-public class User {
+@Table(name = "history")
+public class HistoryRow {
 
     @Id
     @GeneratedValue
     private Long id;
-    private String username;
-    private String password;
-    private String name;
-    @Enumerated(STRING)
-    private Role role;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+    private String text;
+    private String sourceCode;
+    private String targetCode;
+    private Date date;
 }

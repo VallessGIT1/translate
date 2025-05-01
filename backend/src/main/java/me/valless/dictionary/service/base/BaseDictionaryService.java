@@ -5,9 +5,8 @@ import java.util.stream.StreamSupport;
 import lombok.RequiredArgsConstructor;
 import me.valless.dictionary.api.model.dictionary.AddWordRequest;
 import me.valless.dictionary.api.model.dictionary.EditWordRequest;
-import me.valless.dictionary.api.model.dictionary.GetWordRequest;
 import me.valless.dictionary.api.model.dictionary.RemoveWordRequest;
-import me.valless.dictionary.api.model.dictionary.WordResponse;
+import me.valless.dictionary.api.dto.WordDto;
 import me.valless.dictionary.exception.WordNotFoundException;
 import me.valless.dictionary.mapper.TranslationMapper;
 import me.valless.dictionary.repository.elasticsearch.TranslationRepository;
@@ -22,7 +21,7 @@ public class BaseDictionaryService implements DictionaryService {
     private final TranslationMapper translationMapper;
 
     @Override
-    public List<WordResponse> getWords() {
+    public List<WordDto> getWords() {
         var words = translationRepository.findAll();
         return StreamSupport.stream(words.spliterator(), false)
                 .map(translationMapper::map)
@@ -30,28 +29,28 @@ public class BaseDictionaryService implements DictionaryService {
     }
 
     @Override
-    public WordResponse getWord(GetWordRequest request) {
-        var dictionaryEntry = translationRepository.findById(request.getId())
+    public WordDto getWord(String wordId) {
+        var dictionaryEntry = translationRepository.findById(wordId)
                 .orElseThrow(WordNotFoundException::new);
         return translationMapper.map(dictionaryEntry);
     }
 
     @Override
-    public WordResponse addWord(AddWordRequest request) {
+    public WordDto addWord(AddWordRequest request) {
         var dictionaryEntry = translationMapper.map(request);
         dictionaryEntry = translationRepository.save(dictionaryEntry);
         return translationMapper.map(dictionaryEntry);
     }
 
     @Override
-    public WordResponse editWord(EditWordRequest request) {
+    public WordDto editWord(EditWordRequest request) {
         var dictionaryEntry = translationMapper.map(request);
         dictionaryEntry = translationRepository.save(dictionaryEntry);
         return translationMapper.map(dictionaryEntry);
     }
 
     @Override
-    public WordResponse removeWord(RemoveWordRequest request) {
+    public WordDto removeWord(RemoveWordRequest request) {
         var dictionaryEntry = translationMapper.map(request);
         translationRepository.delete(dictionaryEntry);
         return translationMapper.map(dictionaryEntry);

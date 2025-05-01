@@ -33,7 +33,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleGlobalException(Exception exception) {
         var response = ErrorResponse.builder()
-                .message("Внутренняя ошибка сервера: " + exception.getClass().getSimpleName() + " -> " + exception.getMessage())
+                .message("Внутренняя ошибка сервера")
                 .build();
         log.error("Внутренняя ошибка сервера", exception);
         return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);

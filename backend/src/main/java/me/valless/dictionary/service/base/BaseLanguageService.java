@@ -4,8 +4,7 @@ import java.util.List;
 import lombok.RequiredArgsConstructor;
 import me.valless.dictionary.api.model.language.AddLanguageRequest;
 import me.valless.dictionary.api.model.language.EditLanguageRequest;
-import me.valless.dictionary.api.model.language.GetLanguageRequest;
-import me.valless.dictionary.api.model.language.LanguageResponse;
+import me.valless.dictionary.api.dto.LanguageDto;
 import me.valless.dictionary.api.model.language.RemoveLanguageRequest;
 import me.valless.dictionary.exception.LanguageNotFoundException;
 import me.valless.dictionary.mapper.LanguageMapper;
@@ -23,7 +22,7 @@ public class BaseLanguageService implements LanguageService {
     private final LanguageMapper languageMapper;
 
     @Override
-    public List<LanguageResponse> getLanguages() {
+    public List<LanguageDto> getLanguages() {
         return languageRepository.findAll()
                 .stream()
                 .map(languageMapper::map)
@@ -31,28 +30,28 @@ public class BaseLanguageService implements LanguageService {
     }
 
     @Override
-    public LanguageResponse getLanguage(GetLanguageRequest request) {
-        return languageRepository.findByLanguageCode(request.getCode())
+    public LanguageDto getLanguage(String code) {
+        return languageRepository.findByLanguageCode(code)
                 .map(languageMapper::map)
                 .orElseThrow(LanguageNotFoundException::new);
     }
 
     @Override
-    public LanguageResponse addLanguage(AddLanguageRequest request) {
+    public LanguageDto addLanguage(AddLanguageRequest request) {
         var language = languageMapper.map(request);
         language = languageRepository.save(language);
         return languageMapper.map(language);
     }
 
     @Override
-    public LanguageResponse editLanguage(EditLanguageRequest request) {
+    public LanguageDto editLanguage(EditLanguageRequest request) {
         var language = languageMapper.map(request);
         language = languageRepository.save(language);
         return languageMapper.map(language);
     }
 
     @Override
-    public LanguageResponse removeLanguage(RemoveLanguageRequest request) {
+    public LanguageDto removeLanguage(RemoveLanguageRequest request) {
         var dictionaryEntry = languageMapper.map(request);
         languageRepository.delete(dictionaryEntry);
         translationService.removeLanguage(request.getCode());

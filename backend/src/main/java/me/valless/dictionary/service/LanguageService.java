@@ -3,19 +3,18 @@ package me.valless.dictionary.service;
 import java.util.List;
 import me.valless.dictionary.api.model.language.AddLanguageRequest;
 import me.valless.dictionary.api.model.language.EditLanguageRequest;
-import me.valless.dictionary.api.model.language.GetLanguageRequest;
-import me.valless.dictionary.api.model.language.LanguageResponse;
+import me.valless.dictionary.api.dto.LanguageDto;
 import me.valless.dictionary.api.model.language.RemoveLanguageRequest;
 
 public interface LanguageService {
 
-    LanguageResponse getLanguage(GetLanguageRequest request);
+    LanguageDto getLanguage(String code);
 
-    LanguageResponse addLanguage(AddLanguageRequest request);
+    LanguageDto addLanguage(AddLanguageRequest request);
 
-    LanguageResponse editLanguage(EditLanguageRequest request);
+    LanguageDto editLanguage(EditLanguageRequest request);
 
-    LanguageResponse removeLanguage(RemoveLanguageRequest request);
+    LanguageDto removeLanguage(RemoveLanguageRequest request);
 
-    List<LanguageResponse> getLanguages();
+    List<LanguageDto> getLanguages();
 }

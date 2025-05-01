@@ -14,4 +14,5 @@ public class TranslationRequest {
     private String source;
     @Size(min = 1, max = 5, message = "Код языка должен составлять 1-5 символов")
     private String target;
+    private boolean save;
 }

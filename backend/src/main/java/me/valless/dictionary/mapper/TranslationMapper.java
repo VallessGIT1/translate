@@ -3,7 +3,7 @@ package me.valless.dictionary.mapper;
 import me.valless.dictionary.api.model.dictionary.AddWordRequest;
 import me.valless.dictionary.api.model.dictionary.EditWordRequest;
 import me.valless.dictionary.api.model.dictionary.RemoveWordRequest;
-import me.valless.dictionary.api.model.dictionary.WordResponse;
+import me.valless.dictionary.api.dto.WordDto;
 import me.valless.dictionary.document.DictionaryEntry;
 import me.valless.dictionary.model.TranslationResult;
 import org.springframework.stereotype.Component;
@@ -34,8 +34,8 @@ public class TranslationMapper {
                 .build();
     }
 
-    public WordResponse map(DictionaryEntry dictionaryEntry) {
-        return WordResponse.builder()
+    public WordDto map(DictionaryEntry dictionaryEntry) {
+        return WordDto.builder()
                 .id(dictionaryEntry.getId())
                 .word(dictionaryEntry.getWord())
                 .transcription(dictionaryEntry.getTranscription())

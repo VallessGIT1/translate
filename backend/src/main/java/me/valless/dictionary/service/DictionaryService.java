@@ -3,19 +3,18 @@ package me.valless.dictionary.service;
 import java.util.List;
 import me.valless.dictionary.api.model.dictionary.AddWordRequest;
 import me.valless.dictionary.api.model.dictionary.EditWordRequest;
-import me.valless.dictionary.api.model.dictionary.GetWordRequest;
 import me.valless.dictionary.api.model.dictionary.RemoveWordRequest;
-import me.valless.dictionary.api.model.dictionary.WordResponse;
+import me.valless.dictionary.api.dto.WordDto;
 
 public interface DictionaryService {
 
-    List<WordResponse> getWords();
+    List<WordDto> getWords();
 
-    WordResponse addWord(AddWordRequest request);
+    WordDto addWord(AddWordRequest request);
 
-    WordResponse editWord(EditWordRequest request);
+    WordDto editWord(EditWordRequest request);
 
-    WordResponse removeWord(RemoveWordRequest request);
+    WordDto removeWord(RemoveWordRequest request);
 
-    WordResponse getWord(GetWordRequest request);
+    WordDto getWord(String wordId);
 }

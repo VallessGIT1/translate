@@ -34,6 +34,11 @@ public class BaseUserService implements UserDetailsService {
         return mapToUserDetails(user);
     }
 
+    public User getUser(UserDetails userDetails) {
+        return userRepository.findByUsername(userDetails.getUsername())
+                .orElseThrow(() -> new UsernameNotFoundException(format("Пользователь '%s' не найден", userDetails.getUsername())));
+    }
+
     public User signIn(String username, String password) {
         var user = userRepository.findByUsername(username)
                 .orElseThrow(() -> new AuthException("Пользователь не найден"));
